@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PsView">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YLh-ae-cnI">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZB8-Gi-zne"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogH-4e-J1B">
+                    <color key="backgroundColor" red="0.32243765246121503" green="0.37240556978699346" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="dIs-AQ-SDU"/>
+                    </constraints>
+                    <state key="normal" title="获取密码"/>
+                    <connections>
+                        <action selector="getPinClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="OtK-bx-Cln"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl4-pe-e3W">
+                    <color key="backgroundColor" red="1" green="0.4614002229971883" blue="0.34843597494587797" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="确定"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gl4-pe-e3W" firstAttribute="top" secondItem="YLh-ae-cnI" secondAttribute="bottom" constant="26" id="2fP-uk-0VH"/>
+                <constraint firstItem="Gl4-pe-e3W" firstAttribute="width" secondItem="ogH-4e-J1B" secondAttribute="width" id="5Nw-b0-Ujp"/>
+                <constraint firstItem="ogH-4e-J1B" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5ZK-AR-LRB"/>
+                <constraint firstAttribute="trailing" secondItem="YLh-ae-cnI" secondAttribute="trailing" constant="10" id="61u-HC-KpD"/>
+                <constraint firstItem="ogH-4e-J1B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="AWJ-Du-DqN"/>
+                <constraint firstItem="Gl4-pe-e3W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CB1-7c-H6I"/>
+                <constraint firstItem="YLh-ae-cnI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HfX-Hk-gEH"/>
+                <constraint firstAttribute="trailing" secondItem="ogH-4e-J1B" secondAttribute="trailing" constant="10" id="MFM-rL-Ncn"/>
+                <constraint firstItem="ogH-4e-J1B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Xco-Wx-07c"/>
+                <constraint firstItem="YLh-ae-cnI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="kRm-WP-MlN"/>
+                <constraint firstItem="YLh-ae-cnI" firstAttribute="top" secondItem="ogH-4e-J1B" secondAttribute="bottom" constant="28" id="p8w-Z2-nAV"/>
+                <constraint firstItem="YLh-ae-cnI" firstAttribute="top" secondItem="ogH-4e-J1B" secondAttribute="bottom" constant="28" id="pOW-ob-10o"/>
+                <constraint firstItem="Gl4-pe-e3W" firstAttribute="height" secondItem="ogH-4e-J1B" secondAttribute="height" id="ycq-OL-R6k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="getBtn" destination="ogH-4e-J1B" id="kRQ-fX-XVW"/>
+                <outlet property="psTextF" destination="YLh-ae-cnI" id="SkP-bQ-NHz"/>
+                <outlet property="submitBtn" destination="Gl4-pe-e3W" id="E6l-wO-Iwc"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="-69"/>
+        </view>
+    </objects>
+</document>

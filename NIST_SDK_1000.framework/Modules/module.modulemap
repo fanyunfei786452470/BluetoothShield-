@@ -1,0 +1,6 @@
+framework module NIST_SDK_1000 {
+  umbrella header "NIST_SDK_1000.h"
+
+  export *
+  module * { export * }
+}
